@@ -1,1623 +1,385 @@
-﻿<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="de-CH">
 <head>
-	<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="pingback" href="/xmlrpc.php" />
-
-	<script type="text/javascript">
-		document.documentElement.className = 'js';
-	</script>
-	
-	<title>Agile Unconference | SwissAgileLeaders</title>
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel="alternate" type="application/rss+xml" title="SwissAgileLeaders &raquo; Feed" href="/feed/" />
-<link rel="alternate" type="application/rss+xml" title="SwissAgileLeaders &raquo; Comments Feed" href="/comments/feed/" />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fswissagileleaders.org%2Fagileunconference%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fswissagileleaders.org%2Fagileunconference%2F&#038;format=xml" />
-<meta content="Divi Child v.4.27.4.1757838792" name="generator"/><style id='wp-emoji-styles-inline-css' type='text/css'>
-
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-/*# sourceURL=wp-emoji-styles-inline-css */
-</style>
-<style id='wp-block-library-inline-css' type='text/css'>
-:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
-
-/*# sourceURL=wp-block-library-inline-css */
-</style>
-<style id='global-styles-inline-css' type='text/css'>
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-/*# sourceURL=global-styles-inline-css */
-</style>
-
-<link rel='stylesheet' id='contact-form-7-css' href='/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5' type='text/css' media='all' />
-<link rel='stylesheet' id='dcl-slick-css' href='/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/slick/slick.min.css?ver=2.1.5' type='text/css' media='all' />
-<link rel='stylesheet' id='dcl-magnific-css' href='/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/magnific/magnific-popup.min.css?ver=2.1.5' type='text/css' media='all' />
-<link rel='stylesheet' id='dcl-frontend-styles-css' href='/wp-content/plugins/wow-carousel-for-divi-lite/dist/frontend-styles.css?ver=09aba2ca7cf4584ffad0' type='text/css' media='all' />
-<link rel='stylesheet' id='divi-plus-styles-css' href='/wp-content/plugins/divi-plus/styles/style.min.css?ver=1.18.0' type='text/css' media='all' />
-<link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&#038;subset=latin,latin-ext&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='divi-style-parent-css' href='/wp-content/themes/Divi/style-static.min.css?ver=4.27.4' type='text/css' media='all' />
-<link rel='stylesheet' id='divi-style-css' href='/wp-content/themes/Divi-FileUploadChild/style.css?ver=4.27.4.1757838792' type='text/css' media='all' />
-<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/579" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 6.9.1" />
-<link rel="canonical" href="/agileunconference/" />
-<link rel='shortlink' href='/?p=579' />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="icon" href="/wp-content/uploads/2018/04/cropped-SwissAgileLeadersIconSmall-32x32.gif" sizes="32x32" />
-<link rel="icon" href="/wp-content/uploads/2018/04/cropped-SwissAgileLeadersIconSmall-192x192.gif" sizes="192x192" />
-<link rel="apple-touch-icon" href="/wp-content/uploads/2018/04/cropped-SwissAgileLeadersIconSmall-180x180.gif" />
-<meta name="msapplication-TileImage" content="/wp-content/uploads/2018/04/cropped-SwissAgileLeadersIconSmall-270x270.gif" />
-<link rel="stylesheet" id="et-core-unified-tb-600-tb-601-579-cached-inline-styles" href="/wp-content/et-cache/579/et-core-unified-tb-600-tb-601-579.min.css?ver=1762326916" /><link rel='stylesheet' id='dipl-breadcrumb-style-css' href='/wp-content/plugins/divi-plus/includes/modules/Breadcrumb/style.min.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='dipl-button-item-style-css' href='/wp-content/plugins/divi-plus/includes/modules/ButtonItem/style.min.css?ver=1.0.0' type='text/css' media='all' />
-
-<link rel='stylesheet' href='/assets/modern-overrides.css' />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agile Unconference #13 | Swiss Agile Leaders</title>
+  <meta name="description" content="Die 13. Agile Unconference findet am Donnerstag, 05. November 2026, im Karl der Grosse in Zurich statt.">
+  <link rel="icon" href="/wp-content/uploads/2018/04/cropped-SwissAgileLeadersIconSmall-32x32.gif" sizes="32x32">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2018/04/cropped-SwissAgileLeadersIconSmall-180x180.gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/site.js"></script>
 </head>
-<body class="wp-singular page-template-default page page-id-579 wp-theme-Divi wp-child-theme-Divi-FileUploadChild et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
-	<div id="page-container">
-<div id="et-boc" class="et-boc">
-			
-		<header class="et-l et-l--header">
-			<div class="et_builder_inner_content et_pb_gutters3">
-		<div class="et_pb_section et_pb_section_0_tb_header et_pb_sticky_module et_section_regular et_pb_section--with-menu" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_0_tb_header et_pb_row--with-menu">
-				<div class="et_pb_column et_pb_column_2_5 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_0_tb_header">
-				
-				
-				
-				
-				<a href="/"><span class="et_pb_image_wrap "><img fetchpriority="high" decoding="async" width="540" height="231" src="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1.png" alt="" title="SwissAgileLeaders_logo-small-1" srcset="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1.png 540w, /wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1-300x128.png 300w" sizes="(max-width: 540px) 100vw, 540px" class="wp-image-128" /></span></a>
-			</div>
-			</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_right et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
-					
-					
-					
-					
-					<div class="et_pb_menu_inner_container clearfix">
-						
-						<div class="et_pb_menu__wrap">
-							<div class="et_pb_menu__menu">
-								<nav class="et-menu-nav"><ul id="menu-primary-menu" class="et-menu nav"><li id="menu-item-591" class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-591"><a href="/">Home</a></li>
-<li id="menu-item-592" class="et_pb_menu_page_id-577 menu-item menu-item-type-post_type menu-item-object-page menu-item-592"><a href="/werte/">Werte</a></li>
-<li id="menu-item-593" class="et_pb_menu_page_id-579 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-579 current_page_item menu-item-593"><a href="/agileunconference/" aria-current="page">Agile Unconference</a></li>
-<li id="menu-item-594" class="et_pb_menu_page_id-581 menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="/services/">Services</a></li>
-<li id="menu-item-595" class="et_pb_menu_page_id-583 menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="/erster-schritt/">Erster Schritt</a></li>
-<li id="menu-item-596" class="et_pb_menu_page_id-585 menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="/team/">Team</a></li>
-<li id="menu-item-597" class="et_pb_menu_page_id-587 menu-item menu-item-type-post_type menu-item-object-page menu-item-597"><a href="/kontakt/">Kontakt</a></li>
-</ul></nav>
-							</div>
-							
-							
-							<div class="et_mobile_nav_menu">
-				<div class="mobile_nav closed">
-					<span class="mobile_menu_bar"></span>
-				</div>
-			</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_1_tb_header et_section_regular et_pb_section--with-menu" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_1_tb_header et_pb_row--with-menu">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_menu et_pb_menu_1_tb_header et_pb_bg_layout_light  et_pb_text_align_right et_dropdown_animation_fade et_pb_menu--with-logo et_pb_menu--style-left_aligned">
-					
-					
-					
-					
-					<div class="et_pb_menu_inner_container clearfix">
-						<div class="et_pb_menu__logo-wrap">
-			  <div class="et_pb_menu__logo">
-				<a href="/" ><img decoding="async" width="540" height="231" src="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1.png" alt="" srcset="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1.png 540w, /wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1-300x128.png 300w" sizes="(max-width: 540px) 100vw, 540px" class="wp-image-128" /></a>
-			  </div>
-			</div>
-						<div class="et_pb_menu__wrap">
-							<div class="et_pb_menu__menu">
-								<nav class="et-menu-nav"><ul id="menu-primary-menu-1" class="et-menu nav"><li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-591"><a href="/">Home</a></li>
-<li class="et_pb_menu_page_id-577 menu-item menu-item-type-post_type menu-item-object-page menu-item-592"><a href="/werte/">Werte</a></li>
-<li class="et_pb_menu_page_id-579 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-579 current_page_item menu-item-593"><a href="/agileunconference/" aria-current="page">Agile Unconference</a></li>
-<li class="et_pb_menu_page_id-581 menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="/services/">Services</a></li>
-<li class="et_pb_menu_page_id-583 menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="/erster-schritt/">Erster Schritt</a></li>
-<li class="et_pb_menu_page_id-585 menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="/team/">Team</a></li>
-<li class="et_pb_menu_page_id-587 menu-item menu-item-type-post_type menu-item-object-page menu-item-597"><a href="/kontakt/">Kontakt</a></li>
-</ul></nav>
-							</div>
-							
-							
-							<div class="et_mobile_nav_menu">
-				<div class="mobile_nav closed">
-					<span class="mobile_menu_bar"></span>
-				</div>
-			</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div>		</div>
-	</header>
-	<div id="et-main-area">
-	
-<div id="main-content">
+<body class="site-page page-au">
+  <a class="skip-link" href="#main">Direkt zum Inhalt</a>
 
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Swiss Agile Leaders Home">
+        <picture>
+          <source srcset="/assets/img/optimized/logo-sal.avif" type="image/avif">
+          <source srcset="/assets/img/optimized/logo-sal.webp" type="image/webp">
+          <img src="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1-300x128.png" alt="Swiss Agile Leaders Logo" width="300" height="128">
+        </picture>
+      </a>
 
-			
-				<article id="post-579" class="post-579 page type-page status-publish has-post-thumbnail hentry">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
 
-				
-					<div class="entry-content">
-					<div class="et-l et-l--post">
-			<div class="et_builder_inner_content et_pb_gutters3">
-		<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_0">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module dipl_breadcrumb dipl_breadcrumb_0">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dipl-breadcrumb-wrapper layout2">
-				<ol class="dipl-breadcrumb-inner" vocab="https://schema.org/" typeof="BreadcrumbList">
-					<li property="itemListElement" typeof="ListItem" data-icon="&#x24;">
-								<a class="breadcrumb-item dipl-home-page" href="" property="item" typeof="WebPage" >
-									<span class="breadcrumb-page" property="name">Home</span>
-								</a>
-								<meta property="position" content="1" />
-							</li><li property="itemListElement" typeof="ListItem" data-icon="&#x24;">
-							<span class="breadcrumb-page dipl-last-page" property="name">Agile Unconference</span>
-							<meta property="position" content="2" />
-						</li>
-				</ol>
-			</div>
-				</div>
-			</div><div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h1 class="postitle">Agile Unconference</h1></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_1 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_1 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_3_5 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h2 class="has-text-color" id="die-zwolfte-agile-unconference-findet-am-06-november-2025-statt"><span>Die zwölfte (!!!) Agile Unconference findet am 06. November 2025 statt </span></h2></div>
-			</div><div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><div class="wp-block-columns">
-<div class="wp-block-column">
-<p><strong>Die zwölfte Agile Unconference findet am Donnerstag, 06.  November 2025 wieder im <a href="https://www.karldergrosse.ch/">Karl dem Grossen</a>, Zürich statt.  </strong></p>
-<p><strong style="font-size: 17px;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="font-size: 17px;">Mit unserem <a href="https://swissagileleaders.us19.list-manage.com/subscribe?u=0e8f71e36fb92dd350eccaa90&amp;id=71a44efa81">Newsletter </a>bekommst du neuste Informationen zu dem Event.</span></span></span></strong></p>
-<p><strong style="font-size: 17px;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="font-size: 17px;"></span></span></span></strong></p>
-<p><strong style="font-size: 17px;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="font-size: 17px;"></span></span></span></strong></p>
-<p><span style="font-size: 17px; color: #000000;">Hier  kommen noch die Hinweise für das heutige Event&#8230;</span></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><strong></strong></p>
-</div>
-</div></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_2_5 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_0">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="1584" height="1304" src="/wp-content/uploads/2024/11/AU25-1.png" alt="" title="AU25-1" srcset="/wp-content/uploads/2024/11/AU25-1.png 1584w, /wp-content/uploads/2024/11/AU25-1-1280x1054.png 1280w, /wp-content/uploads/2024/11/AU25-1-980x807.png 980w, /wp-content/uploads/2024/11/AU25-1-480x395.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1584px, 100vw" class="wp-image-1070" /></span>
-			</div><div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p style="text-align: center;">Die Agile Unconference findet statt mit <br />freundlicher Unterstützung von <a href="https://www.swissict.ch/">swissICT</a></p></div>
-			</div><div class="et_pb_module et_pb_image et_pb_image_1">
-				
-				
-				
-				
-				<a href="https://www.swissict.ch/" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="161" height="70" src="/wp-content/uploads/2021/10/SwissICT.png" alt="SwissICT" title="SwissICT" class="wp-image-482" /></span></a>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_2 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_2">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="1098" height="1098" src="/wp-content/uploads/2025/11/MuralQRTag.png" alt="" title="MuralQRTag" srcset="/wp-content/uploads/2025/11/MuralQRTag.png 1098w, /wp-content/uploads/2025/11/MuralQRTag-980x980.png 980w, /wp-content/uploads/2025/11/MuralQRTag-480x480.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1098px, 100vw" class="wp-image-1178" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_3_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><strong><span style="font-size: 14px;"><span style="font-size: large;">Dieses Jahr bieten wir euch ein =&gt; <a href="https://app.mural.co/t/klausworkspace1286/m/klausworkspace1286/1758009901482/5e588f8f319ee1ba0e483ada82cabf9c3badceac">Mural Board</a> &lt;= an als interaktives Element der AU</span>. </span></strong></p>
-<p><span style="font-size: 14px;">Das Mural ist für euch und wird bleiben. Wir stellen euch die folgenden Möglichkeiten damit zur Verfügung:</span></p>
-<ul>
-<li>Fotos der Planungwand. da müsst ihr die Wand nicht fotografieren.</li>
-<li>Eine Kudo Wand: Hier könnt ihr ein Danke an andere Teilnehmende hinterlassen und &#8211; <strong>ganz wichtig für uns</strong> &#8211; euer Feedback zur <strong>#AUZH25</strong> hinterlassen: Was hat euch gefallen, was können wir besser machen, was sollten wir lieber bleiben lassen&#8230;</li>
-<li>Eure Kontaktdaten hinterlegen (freiwillig)</li>
-<li>Bilder oder Aufzeichnungen eurer Sessions</li>
-<li>Die Bilder, die ihr im Spiel generiert &#8211; stay tuned&#8230;</li>
-</ul>
-<p><span style="font-size: 14px;"></span></p>
-<p><strong>GDPR Hinweis</strong>: Mit dem Hochladen des Bildes<span style="font-size: 14px;"> erklärt ihr euch einverstanden, dass wir den eingegebenen das Bild auf unserer Web Site unentgeltlich und zeitlich unbegrenzt speichern, verwenden und auch verändern dürfen. </span></p>
-<p><strong>Beachtet ebenfalls:</strong> dieses Mural Board ist für jeden zugänglich, der über den Lnik auf das Mural Board verfügt. Hinterlasst also nur die Daten auf dem Mural, von dem ihr sicher seid, dass ihr diese Daten auf dem Mural belassen wollt. Wir können nicht garantieren wohin der Link auf das Mural überall hingeht und müssen hier auf die ethische Korrektheit von euch als Teilnehmende vertrauen.</p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_3">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_4">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 id="oder-upload-eures-bildes-uber-unsere-upload-utility"><strong>&#8230;oder Upload eures Bildes über unsere Upload Utility</strong></h3>
-<p><strong></strong></p></div>
-			</div><div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p>Ladet mit der folgenden Form das von dir (euch) erzeugt Bild hoch. Ideal gebt dem Bild einen Namen der euer Team eindeutig identifiziert, gebt bitte auch noch euren Namen oder den Namen eures Teams ein. Ihr könnte hier auch einen beliebigen erfundenen Namen eingeben &#8211; Hauptsache ihr wisst, wer hinter dem Namen steht 🙂</p>
-<p><strong>GDPR Hinweis</strong>: Mit dem Ausfüllen und Absenden des Formulars erklärt ihr euch einverstanden, dass wir den eingegebenen Namen und die Datei auf unserer Web Site unentgeltlich und zeitlich unbegrenzt speichern, verwenden und auch verändern dürfen.</p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_5">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner">
-<div class="wpcf7 no-js" id="wpcf7-f1140-p579-o1" lang="de-DE" dir="ltr" data-wpcf7-id="1140">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/agileunconference/#wpcf7-f1140-p579-o1" method="post" class="wpcf7-form init" aria-label="Kontaktformular" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="1140" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="de_DE" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1140-p579-o1" /><input type="hidden" name="_wpcf7_container_post" value="579" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</fieldset>
-<p><label> Dein Name oder dein Team 🙂<br />
-<span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" value="&lt;dein (euer) Name&gt;" type="text" name="your-name" /></span> </label>
-</p>
-<p><label> Lade(t) dein (euer) Bild hoch (nur jpeg Dateien sind erlaubt bis 10Mb Grösse)</label>
-</p>
-<p><span class="wpcf7-form-control-wrap" data-name="file-381"><input size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" accept="image/jpeg" aria-required="true" aria-invalid="false" type="file" name="file-381" /></span><br />
-<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Senden" />
-</p>
-<p>Dieses Formular verwendet Akismet, um Spam zu reduzieren. <a target="_blank" rel="nofollow noopener" href="https://akismet.com/privacy/">Erfahre, wie deine Daten verarbeitet werden.</a>
-</p><p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="218"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
-</div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_6">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_divider et_pb_divider_2 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_2 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_7 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_1_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_3">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="600" height="600" src="/wp-content/uploads/2025/04/DaveThomas.png" alt="Dave Thomas" title="DaveThomas" srcset="/wp-content/uploads/2025/04/DaveThomas.png 600w, /wp-content/uploads/2025/04/DaveThomas-480x480.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 600px, 100vw" class="wp-image-1101" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_3_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h2 style="text-align: center;" id="die-inspiring-keynote-2025"><strong>Die Inspiring Keynote 2025</strong></h2>
-<p><strong></strong></p>
-<h3 style="text-align: left;" id="dave-thomas-mitverfasser-des-agilen-manifests-und-vordenker-der-softwareentwicklung"><strong>Dave Thomas – Mitverfasser des &#8220;Agilen Manifests&#8221; und Vordenker der Softwareentwicklung</strong></h3>
-<p>Als <strong>Mitverfasser des Manifests für agile Softwareentwicklung</strong> hat Dave Thomas dazu beigetragen, die Softwareentwicklung zu revolutionieren und Millionen von Teams weltweit zu inspirieren. Seine unermüdliche Leidenschaft für pragmatische Ansätze und kontinuierliche Verbesserung hat ihn zu einem der einflussreichsten Denker unserer Zeit gemacht.</p>
-<p>Als <strong>echter Visionär sorgte Dave Thomas vor einem Jahrzehnt für Aufsehen</strong>, als er auf der GOTO-Konferenz in Kopenhagen kühn erklärte: „<a href="https://youtu.be/R4AfM2lSqB4?si=A314ddebx211Qrif" target="_blank" rel="noopener"><strong>Agile is Dead</strong></a>“. Seine provokante Aussage löste eine breite Debatte und Reflexion aus, und heute ist sie aktueller denn je, da viele die Agilität für eine neue Ära neu definieren.</p>
-<p>Mit seinem bahnbrechenden Buch „<a href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" target="_blank" rel="noopener"><strong>The Pragmatic Programmer</strong></a>“ hat Dave neue Maßstäbe für Entwickler und Führungskräfte gleichermaßen gesetzt.</p>
-<p>Seine Keynotes sind nicht nur inspirierend, sondern auch vollgepackt mit praktischen Einsichten, (manchmal schwarzem und sarkastischem) Humor und Geschichten aus jahrzehntelanger Erfahrung in diesem Bereich.</p>
-<p><strong>In seinem neuesten Buch „simplicity“</strong> nimmt Dave die unnötige Komplexität der modernen Entwicklung aufs Korn und zeigt Entwicklern, wie sie die Kontrolle zurückgewinnen können.</p>
-<p><strong>Am 6. November 2025 wird Dave Thomas eine „Un-Keynote“ an der Agile Unconference in Zürich halten</strong>. Verpassen Sie nicht die Gelegenheit, von einem echten Pionier der agilen Bewegung zu hören. Sichern Sie sich jetzt Ihren Platz und nehmen Sie an diesem unvergesslichen Erlebnis teil!</p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_3 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_8 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_center et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><div class="wp-block-columns">
-<div class="wp-block-column">
-<p>Setze es dir in den Kalender:  Donnerstag, 06. November 2025<br />9:00 – 18:00 (Türöffnung 8:30)<br />Karl der Grosse, Kirchgasse 14, 8001 Zürich, direkt beim Grossmünster</p>
-</div>
-</div></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_9">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_divider et_pb_divider_3 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 id=""><strong></strong></h3>
-<h3 id=""><strong></strong></h3>
-<h3 id="und-das-haben-wir-an-der-au-2024-erlebt"><strong>&#8230;und das haben wir an der AU 2024 erlebt&#8230;.</strong></h3></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_10">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module wdcl_image_carousel wdcl_image_carousel_0">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div dir="ltr" class="dcm-container dcm-carousel-maker dcm-lightbox-enabled dcm-centered dcm-centered--classic" data-pagi="true"
-			data-pagi-tablet="true"
-			data-pagi-phone="true"
-			data-nav="true"
-			data-nav-tablet="true"
-			data-nav-phone="true"
-			data-autoplay="on"
-			data-autoplay-speed="2000ms"
-			data-speed="700ms"
-			data-slides="3"
-			data-slides-tablet="3"
-			data-slides-phone="3"
-			data-center="on"
-			data-center-mode-type="classic"
-			data-center-padding="70px||"
-			data-vertical="off"
-			data-icon-left="4"
-			data-icon-right="5"
-			data-infinite="on"
-			data-variable-width="on"
-			data-auto-height="on"
-			data-items-scroll="1||"
-			data-fade="off"
-			data-dir="ltr">
-                <div class="wdcl_image_carousel_child wdcl_image_carousel_child_0 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06095-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06095-scaled.jpg" alt="Der Saal füllt sich"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="der-saal-fullt-sich">Der Saal füllt sich</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_1 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06061-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06061-scaled.jpg" alt="Das Planning in vollem Gang"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="das-planning-in-vollem-gang">Das Planning in vollem Gang</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_2 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06266-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06266-scaled.jpg" alt="Von der Generation-Z Diskussion"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="von-der-generation-z-diskussion">Von der Generation-Z Diskussion</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_3 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06283-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06283-scaled.jpg" alt="Bis zu Herausforderungen in Grossunternehmen"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="bis-zu-herausforderungen-in-grossunternehmen">Bis zu Herausforderungen in Grossunternehmen</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_4 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06090-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06090-scaled.jpg" alt="Das Planning für den Vormittag verspricht spannende Themen..."/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="das-planning-fur-den-vormittag-verspricht-spannende-themen">Das Planning für den Vormittag verspricht spannende Themen...</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_5 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6073-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6073-scaled.jpg" alt="Jetzt geht es in die Sessions"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="jetzt-geht-es-in-die-sessions">Jetzt geht es in die Sessions</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_6 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06126-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06126-scaled.jpg" alt="Rick ist voll dabei"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="rick-ist-voll-dabei">Rick ist voll dabei</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_7 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06318-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06318-scaled.jpg" alt="und lockere Gespräche nebenbei"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="und-lockere-gesprache-nebenbei">und lockere Gespräche nebenbei</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_8 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06169-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06169-scaled.jpg" alt="verhungert ist auch niemand :-)"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="verhungert-ist-auch-niemand-%f0%9f%99%82">verhungert ist auch niemand 🙂</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_9 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6081-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6081-scaled.jpg" alt="James ist ready für seine Keynote"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="james-ist-ready-fur-seine-keynote">James ist ready für seine Keynote</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_10 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06235-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06235-scaled.jpg" alt="James packt seine ZuhörerInnen"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="james-packt-seine-zuhorerinnen">James packt seine ZuhörerInnen</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_11 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06211-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06211-scaled.jpg" alt="Volle Konzentration..."/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="volle-konzentration">Volle Konzentration...</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_12 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06185-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06185-scaled.jpg" alt="...bei allen im Saal"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="bei-allen-im-saal">...bei allen im Saal</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_13 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06158-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06158-scaled.jpg" alt="Nachmittags geht es weiter in die Sessions"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="nachmittags-geht-es-weiter-in-die-sessions">Nachmittags geht es weiter in die Sessions</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_14 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06124-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06124-scaled.jpg" alt="...Hmmm - hier wird intensiv nachgedacht..."/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="hmmm-hier-wird-intensiv-nachgedacht">...Hmmm - hier wird intensiv nachgedacht...</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_15 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06311-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06311-scaled.jpg" alt="Zur Lockerung und zum Kennenlernen das schon traditionelle Spiel"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="zur-lockerung-und-zum-kennenlernen-das-schon-traditionelle-spiel">Zur Lockerung und zum Kennenlernen das schon traditionelle Spiel</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_16 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06145-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06145-scaled.jpg" alt="...das Lebenselexier gab es auch vegan mit Hafermilch..."/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="das-lebenselexier-gab-es-auch-vegan-mit-hafermilch">...das Lebenselexier gab es auch vegan mit Hafermilch...</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_17 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/DSC06304-scaled.jpg" src="/wp-content/uploads/2024/11/DSC06304-scaled.jpg" alt="Dieses Jahr mit Bückerecke zum Tauschen"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="dieses-jahr-mit-buckerecke-zum-tauschen">Dieses Jahr mit Bückerecke zum Tauschen</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_18 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/image2-scaled.jpeg" src="/wp-content/uploads/2024/11/image2-scaled.jpeg" alt="Die traditionelle Magnum Sekt Flasdche wird zum Start des Apero geköpft"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="die-traditionelle-magnum-sekt-flasdche-wird-zum-start-des-apero-gekopft">Die traditionelle Magnum Sekt Flasdche wird zum Start des Apero geköpft</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_19 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6090-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6090-scaled.jpg" alt="James war auch bis zum Schluss voll dabei "/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="james-war-auch-bis-zum-schluss-voll-dabei">James war auch bis zum Schluss voll dabei </h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_20 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6092-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6092-scaled.jpg" alt="Cheers"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="cheers">Cheers</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_21 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6094-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6094-scaled.jpg" alt="ebenfalls - Cheers :-)"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="ebenfalls-cheers-%f0%9f%99%82">ebenfalls - Cheers 🙂</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_22 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6093-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6093-scaled.jpg" alt="Wir freuen uns euch nächstes Jahr wieder an der AU zu treffen"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="wir-freuen-uns-euch-nachstes-jahr-wieder-an-der-au-zu-treffen">Wir freuen uns euch nächstes Jahr wieder an der AU zu treffen</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_23 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2024/11/IMG_6089-scaled.jpg" src="/wp-content/uploads/2024/11/IMG_6089-scaled.jpg" alt="...und das ist euer Feedback zur AU 2024"/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="und-das-ist-euer-feedback-zur-au-2024">...und das ist euer Feedback zur AU 2024</h3>  </div></div>
-			</div>
-				</div>
-			</div>
-            </div>
-				</div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_4 et_pb_fullwidth_section et_section_regular" >
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			</div><div class="et_pb_section et_pb_section_5 et_pb_with_background et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_11">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
-				<a class="et_pb_button et_pb_button_0 et_animated et_pb_bg_layout_dark" href="https://swissagileleaders.us19.list-manage.com/subscribe?u=0e8f71e36fb92dd350eccaa90&#038;id=71a44efa81" target="_blank">NEWSLETTER ABONNIEREN</a>
-			</div><div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p style="text-align: center;"><span style="color: #ffffff;">(<strong>nur </strong>zu Themen um die Agile Unconference, versprochen!)</span></p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_6 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_12 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_3_5 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 id="was-ist-die-agile-unconference"><span>Was ist die Agile Unconference?</span></h3>
-<p><span>Agilität ist kein Zustand, sondern eine Haltung, an der wir dauernd arbeiten! Agilität ist die Kunst kleine Schritte zu machen. Als die erste Open Space Veranstaltung der agilen Community der Schweiz bietet die Agile Unconference die Plattform zu Inspiration, Entwicklung und Vernetzung. (Henrik Kniberg zu: </span><a rel="noopener noreferrer" href="https://www.agile-academy.com/de/scrum-master/was-ist-eine-unconference/" target="_blank">Was ist eine Unconference</a><span>?)</span></p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_2_5 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_4">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="1215" height="2375" src="/wp-content/uploads/2022/02/Tiny-Footsteps.png" alt="" title="Tiny Footsteps" srcset="/wp-content/uploads/2022/02/Tiny-Footsteps.png 1215w, /wp-content/uploads/2022/02/Tiny-Footsteps-980x1916.png 980w, /wp-content/uploads/2022/02/Tiny-Footsteps-480x938.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1215px, 100vw" class="wp-image-661" /></span>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_13 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_2_5 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_5">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="129" src="/wp-content/uploads/2022/02/AUC-topics-300x129-1.png" alt="" title="AUC-topics-300x129" class="wp-image-662" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 id="die-themen-bringst-du"><span>Die Themen bringst DU!</span></h3>
-<p>Es gibt keinen vordefinierten Ablauf, keine Tracks und keine Sponsoren. Vielmehr definierst<span> </span><strong>Du</strong><span> </span>die Agenda.</p>
-<p>Du bringst Dich ein bei den Themen der anderen Teilnehmer. So sind am Schluss alle Gewinner. An früheren Agile Unconferencen wurde z.B. über agile Methoden, Leadership, Umgang mit Schwierigkeiten, Tech oder über Tools &amp; Hacks diskutiert. Von Führungsthemen über das schlanke Portfolio bis hin zum kleinsten Detail des BizDevOps war in den letzten Jahren alles vertreten.</p>
-<p>Was bewegt Dich wohl dieses Jahr?</p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_14 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_3_5 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 id="wer-bist-du"><span>Wer bist DU?</span></h3>
-<p><span>Die bunte Mischung ist der Erfolg. Letztes Jahr konnten wir vom Chef bis zum Mitarbeiter, aus Grossunternehmen  oder aus der Software Boutique um die Ecke, vom Industrieunternehmen bis zur Hightech Company eine bunte und lebendige Community begrüssen.</span><br /><span>Eine gute Gelegenheit, einmal „die anderen“ zu treffen und sich mit ihnen auszutauschen.</span></p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_2_5 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_6">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="779" height="781" src="/wp-content/uploads/2022/02/Who-are-you.png" alt="" title="Who are you" srcset="/wp-content/uploads/2022/02/Who-are-you.png 779w, /wp-content/uploads/2022/02/Who-are-you-480x481.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 779px, 100vw" class="wp-image-663" /></span>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_15 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_2_5 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_7">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="267" height="290" src="/wp-content/uploads/2018/06/AUC-how-2.png" alt="" title="AUC-how-2" class="wp-image-161" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_22  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 id="was-dich-erwartet"><span>Wa</span><span>s Dich erwartet</span></h3>
-<p>Ob Novize oder erfahrener Agilist – an der Agile Unconference triffst Du auf gleichgesinnte!</p>
-<p>Reden, Hören, Diskutieren, Skizzieren, Fragen, Wiedersehen, Inspirieren, Kennenlernen, Entwickeln, Präsentieren<br />… und zum Schluss die traditionelle Agile Party mit Bier, Snacks und was dazugehört!</p>
-<p>Was uns als Organisatoren am meisten gefreut hat, war der Kommentar von einem Teilnehmer: „Das war mit Abstand das beste Event in dem Jahr, ich komme auf alle Fälle wieder“. Genau deswegen stürzen wir uns jedes Jahr wieder von Neuem mit Freuden in die Organisation dieses Events zum Selbstkostenpreis.</p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_7 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			</div><div class="et_pb_section et_pb_section_8 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_16 et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_23  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h2 id="impressionen-aus-fruheren-agile-unconferences-2014-heute">Impressionen aus früheren Agile Unconferences 2014 &#8211; heute</h2></div>
-			</div><div class="et_pb_module et_pb_divider et_pb_divider_4 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
-			</div>
-				
-				
-				
-				
-			</div><div class="et_pb_row et_pb_row_17">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_24  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module wdcl_image_carousel wdcl_image_carousel_1">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div dir="ltr" class="dcm-container dcm-carousel-maker dcm-lightbox-enabled dcm-centered dcm-centered--classic" data-pagi="false"
-			data-pagi-tablet="false"
-			data-pagi-phone="false"
-			data-nav="true"
-			data-nav-tablet="true"
-			data-nav-phone="true"
-			data-autoplay="on"
-			data-autoplay-speed="2000ms"
-			data-speed="700ms"
-			data-slides="3"
-			data-slides-tablet="3"
-			data-slides-phone="3"
-			data-center="on"
-			data-center-mode-type="classic"
-			data-center-padding="70px||"
-			data-vertical="off"
-			data-icon-left="4"
-			data-icon-right="5"
-			data-infinite="on"
-			data-variable-width="on"
-			data-auto-height="on"
-			data-items-scroll="1||"
-			data-fade="off"
-			data-dir="ltr">
-                <div class="wdcl_image_carousel_child wdcl_image_carousel_child_24 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2019/11/Bild1-1.jpg" src="/wp-content/uploads/2019/11/Bild1-1.jpg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="unser-spannendes-und-umfangreiches-programm">Unser spannendes und umfangreiches Programm</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_25 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2019/11/Bild2-1.jpg" src="/wp-content/uploads/2019/11/Bild2-1.jpg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="konzentrierte-arbeit">Konzentrierte Arbeit</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_26 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2019/11/Bild3.jpg" src="/wp-content/uploads/2019/11/Bild3.jpg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="sich-kennenlernen">Sich kennenlernen</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_27 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2021/11/SNY04849-scaled.jpg" src="/wp-content/uploads/2021/11/SNY04849-scaled.jpg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="nigel-zuhoren">Nigel zuhören</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_28 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2019/03/SpassMussSein-e1553804729259.jpg" src="/wp-content/uploads/2019/03/SpassMussSein-e1553804729259.jpg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="spass-und-freude">Spass und Freude</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_29 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2023/04/20221025_161042530_iOS-scaled.jpeg" src="/wp-content/uploads/2023/04/20221025_161042530_iOS-scaled.jpeg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="manchmal-wird-auch-gezaubert">Manchmal wird auch gezaubert</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_30 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2023/04/20221025_161445419_iOS-scaled.jpeg" src="/wp-content/uploads/2023/04/20221025_161445419_iOS-scaled.jpeg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="also-herzlich-willkommen-die-nachste-au-kommt">Also: Herzlich willkommen, die nächste AU kommt.</h3>  </div></div>
-			</div>
-				</div>
-			</div><div class="wdcl_image_carousel_child wdcl_image_carousel_child_31 wdc_et_pb_module">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dcm-carousel-item dcm-image-swap dcm-hover--zoom-in">
-				<figure class="dcm-lightbox-ctrl">
-				<div class="dcm-overlay" data-icon=""></div>
-				<img decoding="async" class="dcm-main-img" data-mfp-src="/wp-content/uploads/2023/12/IMG_5140-scaled.jpg" src="/wp-content/uploads/2023/12/IMG_5140-scaled.jpg" alt=""/>
-            </figure> <div class="content content--center content--normal"><div class="content-inner"> <h3 class="dcm-image-title" id="2023-hat-uns-joe-justice-hardware-agility-vom-feinsten-erklart">2023 hat uns Joe Justice Hardware Agility vom Feinsten erklärt.</h3>  </div></div>
-			</div>
-				</div>
-			</div>
-            </div>
-				</div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div>		</div>
-	</div>
-						</div>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <ul>
+          <li><a href="/" data-i18n-de="Home" data-i18n-en="Home">Home</a></li>
+          <li><a href="/werte/" data-i18n-de="Werte" data-i18n-en="Values">Werte</a></li>
+          <li><a href="/agileunconference/" aria-current="page" data-i18n-de="Agile Unconference" data-i18n-en="Agile Unconference">Agile Unconference</a></li>
+          <li><a href="/services/" data-i18n-de="Services" data-i18n-en="Services">Services</a></li>
+          <li><a href="/erster-schritt/" data-i18n-de="Erster Schritt" data-i18n-en="First Step">Erster Schritt</a></li>
+          <li><a href="/team/" data-i18n-de="Team" data-i18n-en="Team">Team</a></li>
+          <li><a href="/kontakt/" data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</a></li>
+        </ul>
+      </nav>
 
-				
-				</article>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button type="button" data-lang-btn="de" class="is-active">DE</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+        <a class="btn btn-primary header-cta" href="#AUZH26" data-i18n-de="Jetzt anmelden" data-i18n-en="Register now">Jetzt anmelden</a>
+      </div>
+    </div>
+  </header>
 
-			
+  <main id="main">
+    <section class="hero hero-event">
+      <div class="container event-hero" data-stagger>
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n-de="Agile Unconference #13" data-i18n-en="Agile Unconference #13">Agile Unconference #13</p>
+          <h1 data-i18n-de="05. November 2026 in Zuerich: Open Space, starke Community, konkrete Impulse." data-i18n-en="November 5, 2026 in Zurich: Open Space, strong community, and practical inspiration.">
+            05. November 2026 in Zuerich: Open Space, starke Community, konkrete Impulse.
+          </h1>
+          <p data-i18n-de="Die 13. Agile Unconference findet wieder im Karl der Grosse statt. Du bringst Themen ein, diskutierst mit anderen Praktiker:innen und gehst mit umsetzbaren Ideen nach Hause." data-i18n-en="The 13th Agile Unconference is back at Karl der Grosse. Bring your topics, exchange with experienced practitioners, and leave with ideas you can apply immediately.">
+            Die 13. Agile Unconference findet wieder im Karl der Grosse statt. Du bringst Themen ein, diskutierst mit anderen Praktiker:innen und gehst mit umsetzbaren Ideen nach Hause.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#AUZH26" data-i18n-de="Zur Anmeldung" data-i18n-en="Go to registration">Zur Anmeldung</a>
+            <a class="btn btn-secondary" href="https://swissagileleaders.us19.list-manage.com/subscribe?u=0e8f71e36fb92dd350eccaa90&id=71a44efa81" target="_blank" rel="noopener noreferrer" data-i18n-de="Newsletter abonnieren" data-i18n-en="Subscribe to newsletter">
+              Newsletter abonnieren
+            </a>
+          </div>
+        </div>
 
-</div>
+        <div class="hero-visual reveal">
+          <picture>
+            <source srcset="/assets/img/optimized/au25-hero.avif" type="image/avif">
+            <source srcset="/assets/img/optimized/au25-hero.webp" type="image/webp">
+            <img src="/wp-content/uploads/2024/11/AU25-1.png" alt="Visual zur Agile Unconference">
+          </picture>
+        </div>
+      </div>
+    </section>
 
-	<footer class="et-l et-l--footer">
-			<div class="et_builder_inner_content et_pb_gutters3">
-		<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_1_5 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
-				
-				
-				
-				
-				<a href="/"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="540" height="231" src="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1.png" alt="" title="SwissAgileLeaders_logo-small-1" srcset="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1.png 540w, /wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1-300x128.png 300w" sizes="(max-width: 540px) 100vw, 540px" class="wp-image-128" /></span></a>
-			</div><div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><span>Wir sind überzeugt, dass agile, also dezentrale und selbstorganisierende Teams motivierter und profitabler agieren.</span></p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 class="widget-title">LINKS</h3></div>
-			</div><div class="et_pb_module et_pb_divider et_pb_divider_0_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><a href="/werte/">Werte</a></p>
-<p><a href="/agileunconference/">Events</a></p>
-<p><a href="/services/">Services</a></p>
-<p><a href="/erster-schritt/">Erster Schritt</a></p>
-<p><a href="/team/">Team</a></p>
-<p><a href="/kontakt/">Kontakt</a></p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 class="widget-title">SERVICES</h3></div>
-			</div><div class="et_pb_module et_pb_divider et_pb_divider_1_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_4_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><a href="/services/"><span>USP’s des Swiss Agile Leaders Circle</span></a></p>
-<p class="et_pb_module_header"><a href="/services/"><span>Netzwerke und Community Gedanke</span></a></p>
-<p class="et_pb_module_header"><a href="/services/"><span>Lean Transformation &amp; Change Management</span></a></p>
-<p class="et_pb_module_header"><a href="/services/"><span>Coaching &amp; Workshops</span></a></p>
-<p class="et_pb_module_header"><a href="/services/"><span>Trainingsportfolio</span></a></p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_5_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 class="widget-title">KONTAKT</h3></div>
-			</div><div class="et_pb_module et_pb_divider et_pb_divider_2_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_6_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><span><strong>Email:</strong> <a href="mailto:contact@swissagileleaders.org">contact@swissagileleaders.org</a></span></p>
-<p><span><strong>Phone:<br />totally overvalued</strong><a href="tel:+41 79 202 59 46"></a></span></p>
-<p><span><strong>Address:</strong><br />We are digital everywhere<br />physically in Switzerland</span></p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_7_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h3 class="widget-title">ABONNIEREN</h3></div>
-			</div><div class="et_pb_module et_pb_divider et_pb_divider_3_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module dipl_button dipl_button_0_tb_footer">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="et_pb_module dipl_button_item dipl_button_item_0_tb_footer">
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_module_inner">
-					<div class="dipl_button_wrapper dipl_button_classic"><a class="dipl_button_link dipl_button_default_fill" href="https://swissagileleaders.us19.list-manage.com/subscribe?u=0e8f71e36fb92dd350eccaa90&#038;id=71a44efa81" target="_blank"><span class="dipl_button_text">Newsletter abonnieren</span></a></div>
-				</div>
-			</div>
-				</div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_1_tb_footer et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_1_2 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_8_tb_footer  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p>© <span>Copyright 2022 | </span><a href="/">Swiss Agile Leaders</a> | Alle Rechte vorbehalten</p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_9_tb_footer  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><a href="/impressum-and-legal/" target="_blank" rel="noopener">Impressum and legal</a></p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div>		</div>
-	</footer>
-		</div>
+    <section class="section" id="facts">
+      <div class="container section-head reveal">
+        <p class="eyebrow" data-i18n-de="Event Fakten" data-i18n-en="Event facts">Event Fakten</p>
+        <h2 data-i18n-de="Alles Wichtige auf einen Blick" data-i18n-en="Everything important at a glance">Alles Wichtige auf einen Blick</h2>
+      </div>
+      <div class="container facts-grid" data-stagger>
+        <article class="fact-card reveal">
+          <h3>Datum</h3>
+          <p>Donnerstag, 05. November 2026</p>
+        </article>
+        <article class="fact-card reveal">
+          <h3>Zeit</h3>
+          <p>9:00 bis 18:00 Uhr<br>(Tueroeffnung 8:30)</p>
+        </article>
+        <article class="fact-card reveal">
+          <h3>Ort</h3>
+          <p>Karl der Grosse<br>Kirchgasse 14, 8001 Zuerich</p>
+        </article>
+        <article class="fact-card reveal">
+          <h3>Format</h3>
+          <p>Open Space + Keynote + Community Session Planning</p>
+        </article>
+      </div>
+    </section>
 
-			
-		</div>
-		</div>
+    <section class="section section-muted" id="agenda">
+      <div class="container section-head reveal">
+        <p class="eyebrow" data-i18n-de="Ablauf" data-i18n-en="Schedule">Ablauf</p>
+        <h2 data-i18n-de="Tages-Timeline der AU #13" data-i18n-en="AU #13 day timeline">Tages-Timeline der AU #13</h2>
+      </div>
+      <div class="container timeline">
+        <div class="timeline-item reveal">
+          <p class="timeline-time">08:30</p>
+          <p>Doors open, Kaffee, Ankommen, erstes Networking</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">09:00</p>
+          <p>Welcome, Intro und Session Marketplace vorbereiten</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">09:30</p>
+          <p>Gemeinsames Session Planning: Die Themen bringst DU</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">10:00 - 12:15</p>
+          <p>Session Block 1 in parallelen Tracks</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">12:15 - 13:15</p>
+          <p>Lunch, Austausch, Themen vertiefen</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">13:30</p>
+          <p>Inspiring Keynote mit Aino Vonge Corry</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">14:30 - 17:00</p>
+          <p>Session Block 2 und Follow-up Diskussionen</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="timeline-time">17:00 - 18:00</p>
+          <p>Wrap-up, Learnings, Apero und lockerer Ausklang</p>
+        </div>
+      </div>
+    </section>
 
-			<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Divi-FileUploadChild/*","/wp-content/themes/Divi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-	<script type="text/javascript">
-				var et_animation_data = [{"class":"et_pb_button_0","style":"slide","repeat":"once","duration":"1650ms","delay":"0ms","intensity":"22%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
-				</script>
-	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
-<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
-<script type="text/javascript" id="wp-i18n-js-after">
-/* <![CDATA[ */
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-//# sourceURL=wp-i18n-js-after
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5" id="swv-js"></script>
-<script type="text/javascript" id="contact-form-7-js-before">
-/* <![CDATA[ */
-var wpcf7 = {
-    "api": {
-        "root": "https:\/\/swissagileleaders.org\/wp-json\/",
-        "namespace": "contact-form-7\/v1"
-    }
-};
-//# sourceURL=contact-form-7-js-before
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5" id="contact-form-7-js"></script>
-<script type="text/javascript" src="/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/slick/slick.min.js?ver=2.1.5" id="dcl-slick-js"></script>
-<script type="text/javascript" src="/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/magnific/magnific-popup.min.js?ver=2.1.5" id="dcl-magnific-js"></script>
-<script type="text/javascript" src="/wp-content/plugins/wow-carousel-for-divi-lite/dist/frontend.js?ver=ab64f78862b1d844c474" id="dcl-frontend-js"></script>
-<script type="text/javascript" id="divi-custom-script-js-extra">
-/* <![CDATA[ */
-var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
-var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
-var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
-var et_pb_custom = {"ajaxurl":"/wp-admin/admin-ajax.php","images_uri":"/wp-content/themes/Divi/images","builder_images_uri":"/wp-content/themes/Divi/includes/builder/images","et_frontend_nonce":"aacd56165e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"148fe50456","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"579","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors","accent_color":"#d83337","waypoints_options":[]};
-var et_pb_box_shadow_elements = [];
-//# sourceURL=divi-custom-script-js-extra
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.4" id="divi-custom-script-js"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js?ver=4.27.4" id="es6-promise-js"></script>
-<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Le6-a8jAAAAAFJnp8BycVl23NPaFWn6HxfPHbWl&amp;ver=4.27.4" id="et-recaptcha-v3-js"></script>
-<script type="text/javascript" id="et-core-api-spam-recaptcha-js-extra">
-/* <![CDATA[ */
-var et_core_api_spam_recaptcha = {"site_key":"6Le6-a8jAAAAAFJnp8BycVl23NPaFWn6HxfPHbWl","page_action":{"action":"agileunconference"}};
-//# sourceURL=et-core-api-spam-recaptcha-js-extra
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/recaptcha.js?ver=4.27.4" id="et-core-api-spam-recaptcha-js"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.4" id="fitvids-js"></script>
-<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.9.1" id="comment-reply-js" async="async" data-wp-strategy="async" fetchpriority="low"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.27.4" id="jquery-mobile-js"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.27.4" id="magnific-popup-js"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.27.4" id="easypiechart-js"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.27.4" id="salvattore-js"></script>
-<script type="text/javascript" id="divi-plus-frontend-bundle-js-extra">
-/* <![CDATA[ */
-var DiviPlusFrontendData = {"version":"1.18.0","ajaxurl":"/wp-admin/admin-ajax.php","ajaxnonce":"4ea0a6b3dd"};
-//# sourceURL=divi-plus-frontend-bundle-js-extra
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/plugins/divi-plus/scripts/frontend-bundle.min.js?ver=1.18.0" id="divi-plus-frontend-bundle-js"></script>
-<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.4" id="et-core-common-js"></script>
-<script defer type="text/javascript" src="/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1763090140" id="akismet-frontend-js"></script>
-<script type="text/javascript" src="/wp-content/plugins/divi-plus/includes/modules/Button/dipl-button-custom.min.js?ver=1.0.0" id="dipl-button-custom-js"></script>
-<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
-/* <![CDATA[ */
-var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
-//# sourceURL=et-builder-modules-script-motion-js-extra
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.27.4" id="et-builder-modules-script-motion-js"></script>
-<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
-/* <![CDATA[ */
-var et_pb_sticky_elements = {"et_pb_section_0_tb_header":{"id":"et_pb_section_0_tb_header","selector":".et_pb_section_0_tb_header","position":"top","topOffset":"0px","bottomOffset":"0px","topLimit":"none","bottomLimit":"none","offsetSurrounding":"on","transition":"on","styles":{"module_alignment":{"desktop":"","tablet":"","phone":""},"positioning":"relative"},"stickyStyles":{"position_origin_r":"top_left","horizontal_offset":"","vertical_offset":""}}};
-//# sourceURL=et-builder-modules-script-sticky-js-extra
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.27.4" id="et-builder-modules-script-sticky-js"></script>
-<script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1"}}
-</script>
-<script type="module">
-/* <![CDATA[ */
-/*! This file is auto-generated */
-const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
-//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
-/* ]]> */
-</script>
-	
-	</body>
+    <section class="section" id="keynote">
+      <div class="container section-head reveal">
+        <p class="eyebrow" data-i18n-de="Inspiring Keynote 2026" data-i18n-en="Inspiring keynote 2026">Inspiring Keynote 2026</p>
+        <h2>Aino Vonge Corry</h2>
+      </div>
+      <div class="container keynote-card" data-stagger>
+        <article class="keynote-copy reveal">
+          <h3 data-i18n-de="Retrospektiven, die wirklich etwas veraendern" data-i18n-en="Retrospectives that drive real change">Retrospektiven, die wirklich etwas veraendern</h3>
+          <p>
+            Aino Vonge Corry verbindet wissenschaftliche Schaerfe mit pragmatischer Beratung. Als unabhaengige
+            Beraterin arbeitet sie mit Unternehmen daran, lernende Organisationen aufzubauen, in denen Teams durch
+            wirksame Retrospektiven und gutes Feedback schneller besser werden.
+          </p>
+          <p>
+            Viele kennen sie durch ihr Buch <strong>Retrospectives Antipatterns</strong>. Darin zeigt sie klar, warum
+            Retrospektiven oft zur Routine werden und wie man sie wieder zu einem echten Lern- und
+            Verbesserungsinstrument macht. Genau diesen Blick bringt sie als Keynote in die Agile Unconference #13.
+          </p>
+          <p>
+            Freu dich auf konkrete Muster, typische Fallstricke und direkt anwendbare Ansaetze fuer Teams, Scrum Master
+            und agile Fuehrung.
+          </p>
+        </article>
+        <aside class="keynote-highlights reveal">
+          <h3>Profil</h3>
+          <ul>
+            <li>Independent Consultant mit Fokus auf Learning Organizations</li>
+            <li>Ehem. Associate Professorin an der Aarhus University</li>
+            <li>Autorin von <em>Retrospectives Antipatterns</em></li>
+            <li>Co-Autorin von <em>Learning Teams</em> und <em>Leading Quality</em></li>
+            <li>Internationale Speakerin zu Retrospektiven und Team-Lernen</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="mural">
+      <div class="container section-head reveal">
+        <p class="eyebrow">Mural Board</p>
+        <h2 data-i18n-de="Auch 2026 wieder: Gemeinsames Mural" data-i18n-en="Back in 2026: Shared Mural board">Auch 2026 wieder: Gemeinsames Mural</h2>
+      </div>
+      <div class="container mural-grid" data-stagger>
+        <article class="mural-copy reveal">
+          <p data-i18n-de="Das Mural Board bleibt fester Teil der Agile Unconference. Dort teilen wir Session-Resultate, Foto-Highlights, Kudos und Feedback." data-i18n-en="The Mural board remains a core part of the Agile Unconference. We use it for session outcomes, highlights, kudos, and feedback.">
+            Das Mural Board bleibt fester Teil der Agile Unconference. Dort teilen wir Session-Resultate, Foto-Highlights, Kudos und Feedback.
+          </p>
+          <p data-i18n-de="Wichtig fuer 2026: Wir machen keinen Bild-Upload mehr auf dieser Seite. Bilder bitte direkt ins Mural laden." data-i18n-en="Important for 2026: there is no image upload on this page anymore. Please upload images directly in Mural.">
+            Wichtig fuer 2026: Wir machen keinen Bild-Upload mehr auf dieser Seite. Bilder bitte direkt ins Mural laden.
+          </p>
+          <a class="btn btn-primary" href="https://app.mural.co/t/klausworkspace1286/m/klausworkspace1286/1758009901482/5e588f8f319ee1ba0e483ada82cabf9c3badceac" target="_blank" rel="noopener noreferrer">
+            Mural Board oeffnen
+          </a>
+          <p class="small-note">
+            Datenschutz-Hinweis: Das Board ist fuer alle sichtbar, die den Link besitzen. Bitte teile nur Inhalte, mit denen du dich wohl fuehlst.
+          </p>
+        </article>
+        <article class="mural-qr reveal">
+          <picture>
+            <source srcset="/assets/img/optimized/mural-qr.avif" type="image/avif">
+            <source srcset="/assets/img/optimized/mural-qr.webp" type="image/webp">
+            <img src="/wp-content/uploads/2025/11/MuralQRTag-980x980.png" alt="QR Code zum Mural Board">
+          </picture>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about-format">
+      <div class="container section-head reveal">
+        <p class="eyebrow">Format</p>
+        <h2>Was ist die Agile Unconference?</h2>
+      </div>
+      <div class="container cards" data-stagger>
+        <article class="card reveal">
+          <h3>Open Space seit 2014</h3>
+          <p>Als erste Open-Space-Veranstaltung der agilen Community in der Schweiz steht die AU fuer Austausch, Lernen und echte Vernetzung.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Die Themen bringst DU</h3>
+          <p>Du gibst Themen rein, priorisierst mit anderen Teilnehmenden und arbeitest aktiv in Sessions mit.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Wer ist dabei?</h3>
+          <p>Von Novize bis erfahrene Agilist:innen: Fuehrung, Produkt, Tech, Coaching, Organisationsentwicklung.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Was dich erwartet</h3>
+          <p>Konkrete Impulse, kontroverse Diskussionen, neue Kontakte und sehr viel praktische Erfahrung aus dem Feld.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="highlights">
+      <div class="container section-head reveal">
+        <p class="eyebrow">Highlights</p>
+        <h2>Das haben wir 2024 erlebt</h2>
+      </div>
+      <div class="container gallery-shell reveal">
+        <div class="gallery-controls">
+          <button class="slider-btn" type="button" data-gallery-prev aria-label="Vorheriges Bild">Prev</button>
+          <button class="slider-btn" type="button" data-gallery-next aria-label="Nachstes Bild">Next</button>
+        </div>
+        <div class="gallery-track" data-gallery-track data-lightbox-gallery="au-2024">
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-1.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-1.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/DSC06061-scaled.jpg" alt="Der Saal fuellt sich">
+            </picture>
+            <figcaption>Der Saal fuellt sich</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-2.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-2.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/DSC06095-scaled.jpg" alt="Planning in vollem Gang">
+            </picture>
+            <figcaption>Planning in vollem Gang</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-3.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-3.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/IMG_6073-scaled.jpg" alt="Jetzt geht es in die Sessions">
+            </picture>
+            <figcaption>Jetzt geht es in die Sessions</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-4.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-4.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/IMG_6081-scaled.jpg" alt="Keynote und Diskussion">
+            </picture>
+            <figcaption>Keynote und Diskussion</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-5.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-5.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/DSC06158-scaled.jpg" alt="Nachmittags geht es weiter">
+            </picture>
+            <figcaption>Nachmittags geht es weiter</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-6.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-6.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/DSC06311-scaled.jpg" alt="Gemeinsames Spiel und Energie">
+            </picture>
+            <figcaption>Gemeinsames Spiel und Energie</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="/assets/img/optimized/au-gallery-7.avif" type="image/avif">
+              <source srcset="/assets/img/optimized/au-gallery-7.webp" type="image/webp">
+              <img src="/wp-content/uploads/2024/11/IMG_6094-scaled.jpg" alt="Apero und Austausch">
+            </picture>
+            <figcaption>Apero und Austausch</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="AUZH26">
+      <div class="container cta-panel reveal">
+        <div>
+          <p class="eyebrow">Anmeldung</p>
+          <h2 data-i18n-de="Sichere dir jetzt deinen Platz fuer die Agile Unconference #13" data-i18n-en="Secure your spot for Agile Unconference #13">
+            Sichere dir jetzt deinen Platz fuer die Agile Unconference #13
+          </h2>
+          <p>
+            Melde dich ueber den Newsletter an, um Registrierung, Tickets und alle laufenden Updates direkt zu erhalten.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://swissagileleaders.us19.list-manage.com/subscribe?u=0e8f71e36fb92dd350eccaa90&id=71a44efa81" target="_blank" rel="noopener noreferrer">
+            Newsletter abonnieren
+          </a>
+          <a class="btn btn-secondary" href="mailto:contact@swissagileleaders.org">
+            Event-Frage senden
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sponsor-strip">
+      <div class="container sponsor-card reveal">
+        <p>Die Agile Unconference findet statt mit freundlicher Unterstuetzung von</p>
+        <a href="https://www.swissict.ch/" target="_blank" rel="noopener noreferrer">
+          <img src="/wp-content/uploads/2021/10/SwissICT.png" alt="SwissICT" width="161" height="70">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <picture>
+          <source srcset="/assets/img/optimized/logo-sal.avif" type="image/avif">
+          <source srcset="/assets/img/optimized/logo-sal.webp" type="image/webp">
+          <img class="footer-logo" src="/wp-content/uploads/2018/04/SwissAgileLeaders_logo-small-1-300x128.png" alt="Swiss Agile Leaders Logo" width="300" height="128">
+        </picture>
+        <p>Wir sind ueberzeugt, dass agile, dezentrale und selbstorganisierende Teams motivierter und profitabler agieren.</p>
+      </div>
+      <div>
+        <h3 data-i18n-de="Links" data-i18n-en="Links">Links</h3>
+        <ul>
+          <li><a href="/werte/" data-i18n-de="Werte" data-i18n-en="Values">Werte</a></li>
+          <li><a href="/agileunconference/" data-i18n-de="Events" data-i18n-en="Events">Events</a></li>
+          <li><a href="/services/" data-i18n-de="Services" data-i18n-en="Services">Services</a></li>
+          <li><a href="/erster-schritt/" data-i18n-de="Erster Schritt" data-i18n-en="First Step">Erster Schritt</a></li>
+          <li><a href="/team/" data-i18n-de="Team" data-i18n-en="Team">Team</a></li>
+          <li><a href="/kontakt/" data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h3>
+        <p><strong>Email:</strong> <a href="mailto:contact@swissagileleaders.org">contact@swissagileleaders.org</a></p>
+        <p><strong>Phone:</strong> totally overvalued</p>
+        <p><strong>Address:</strong> We are digital everywhere, physically in Switzerland.</p>
+      </div>
+      <div>
+        <h3 data-i18n-de="Abonnieren" data-i18n-en="Subscribe">Abonnieren</h3>
+        <a class="btn btn-secondary" href="https://swissagileleaders.us19.list-manage.com/subscribe?u=0e8f71e36fb92dd350eccaa90&id=71a44efa81" target="_blank" rel="noopener noreferrer" data-i18n-de="Newsletter abonnieren" data-i18n-en="Subscribe to newsletter">
+          Newsletter abonnieren
+        </a>
+      </div>
+    </div>
+    <div class="container legal-row">
+      <p>&copy; <span id="year">2026</span> Swiss Agile Leaders</p>
+      <a href="/impressum-and-legal/">Impressum and legal</a>
+      <p class="translation-note" data-ai-translation-note>English text was translated by AI from the original German.</p>
+    </div>
+  </footer>
+</body>
 </html>
