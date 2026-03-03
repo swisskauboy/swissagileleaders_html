@@ -1,42 +1,49 @@
-﻿# Swiss Agile Leaders (Static Modernized Copy)
+# Swiss Agile Leaders (Static Site)
 
-This repository currently contains a static mirror of https://swissagileleaders.org with a light modernization pass.
+Statische Website fuer Swiss Agile Leaders, ohne CMS-Runtime.
 
-## What is included
+## Seiten
 
-- Full page mirror for the currently published WordPress pages:
-  - `/` and `/heim/`
-  - `/werte/`
-  - `/agileunconference/`
-  - `/services/`
-  - `/erster-schritt/`
-  - `/team/`
-  - `/kontakt/`
-  - `/impressum-and-legal/`
-  - `/vernissage/`
-  - `/trainingwithjoejustice/`
-  - `/testpage/`
-- Downloaded CSS/JS/images from the current site (`/wp-content`, `/wp-includes`).
-- A light styling override at `site/assets/modern-overrides.css`.
+- `/`
+- `/werte/`
+- `/agileunconference/`
+- `/services/`
+- `/erster-schritt/`
+- `/team/`
+- `/kontakt/`
+- `/impressum-and-legal/`
 
-## Local preview
+## Struktur
 
-From repository root:
+- `index.html` und Unterseiten in `<slug>/index.html`
+- Zentrale Styles: `assets/site.css`
+- Zentrales Verhalten (Navigation, Sprache, Slider, Lightbox): `assets/site.js`
+- Optimierte Medien unter `assets/img/*`
+- Alle Bild-/Icon-Dateien liegen unter `assets/img/*`
+- Hilfsskripte liegen unter `scripts/` und werden nicht deployed
+
+## Lokal starten
 
 ```powershell
-cd site
 python -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+Dann `http://localhost:8080` oeffnen.
 
-If you use VS Code Live Server, this workspace includes [`.vscode/settings.json`](/d:/repos/swissagileleaders_html/.vscode/settings.json) with `liveServer.settings.root` set to `/site`.
-After starting Live Server, open `http://127.0.0.1:5500/` (not `/site/`).
+## Deployment
 
-## Notes for next iteration
+Deployment erfolgt mit:
 
-- The page content currently reflects the live site state imported on **March 2, 2026**.
-- Requested future content changes (not applied yet):
-  - Agile Unconference update for **November 5, 2026**.
-- Add **Aino Vogne Corry** as keynote speaker.
-  - Add bilingual support (German + English).
+```bat
+.\scripts\deploy.bat
+```
+
+Dry-run:
+
+```bat
+.\scripts\deploy.bat -DryRun
+```
+
+Standard-Ziel:
+
+`D:\Nextcloud (aragost)\public\swissagileleaders_html`

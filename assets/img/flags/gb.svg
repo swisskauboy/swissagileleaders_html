@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" role="img" aria-label="United Kingdom Flag">
+  <rect width="60" height="40" fill="#012169"/>
+  <polygon points="0,0 7,0 60,33 60,40 53,40 0,7" fill="#fff"/>
+  <polygon points="60,0 53,0 0,33 0,40 7,40 60,7" fill="#fff"/>
+  <polygon points="0,0 3.5,0 60,35.5 60,40 56.5,40 0,4.5" fill="#c8102e"/>
+  <polygon points="60,0 56.5,0 0,35.5 0,40 3.5,40 60,4.5" fill="#c8102e"/>
+  <rect x="0" y="16" width="60" height="8" fill="#fff"/>
+  <rect x="26" y="0" width="8" height="40" fill="#fff"/>
+  <rect x="0" y="17.5" width="60" height="5" fill="#c8102e"/>
+  <rect x="27.5" y="0" width="5" height="40" fill="#c8102e"/>
+</svg>
