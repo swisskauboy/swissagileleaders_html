@@ -33,10 +33,23 @@
     const defaultLang = "de";
     const savedLang = localStorage.getItem(storageKey);
     const activeLang = savedLang === "en" ? "en" : defaultLang;
+    let currentLang = activeLang;
+    const mobileQuery = window.matchMedia("(max-width: 640px)");
+
+    function getI18nValue(node, lang) {
+      if (mobileQuery.matches) {
+        const mobileValue = node.getAttribute("data-i18n-" + lang + "-mobile");
+        if (mobileValue !== null) {
+          return mobileValue;
+        }
+      }
+      return node.getAttribute("data-i18n-" + lang);
+    }
 
     function applyLang(lang) {
+      currentLang = lang;
       i18nNodes.forEach(function (node) {
-        const value = node.getAttribute("data-i18n-" + lang);
+        const value = getI18nValue(node, lang);
         if (value !== null) {
           node.innerHTML = value;
         }
@@ -59,6 +72,16 @@
         applyLang(lang === "en" ? "en" : "de");
       });
     });
+
+    if (typeof mobileQuery.addEventListener === "function") {
+      mobileQuery.addEventListener("change", function () {
+        applyLang(currentLang);
+      });
+    } else if (typeof mobileQuery.addListener === "function") {
+      mobileQuery.addListener(function () {
+        applyLang(currentLang);
+      });
+    }
 
     applyLang(activeLang);
   }

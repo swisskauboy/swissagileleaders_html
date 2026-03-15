@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="/assets/img/brand/apple-touch-icon-180x180.gif">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2ssfamily=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site.js"></script>
 </head>
@@ -27,7 +27,12 @@
       </a>
 
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-label" data-i18n-de="Menü" data-i18n-en="Menu">Menü</span>
+        <span class="nav-toggle-label sr-only" data-i18n-de="Menü" data-i18n-en="Menu">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path d="M4 6.5h16M4 12h16M4 17.5h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </span>
       </button>
 
       <nav id="site-nav" class="site-nav" data-nav>
@@ -47,7 +52,7 @@
           <button type="button" data-lang-btn="de" class="is-active" aria-label="Deutsch" title="Deutsch"><img class="lang-flag" src="/assets/img/flags/ch_square.svg" alt="" aria-hidden="true"></button>
           <button type="button" data-lang-btn="en" aria-label="English" title="English"><img class="lang-flag" src="/assets/img/flags/gb.svg" alt="" aria-hidden="true"></button>
         </div>
-        <a class="btn btn-primary header-cta" href="https://eventfrog.ch/de/p/kurse-seminare/berufliche-bildung/agile-unconference-2026-7393004809425552751.html" target="_blank" rel="noopener noreferrer" data-i18n-de="#AUZH26 - jetzt anmelden" data-i18n-en="#AUZH26 - register now">#AUZH26 - jetzt anmelden</a>
+        <a class="btn btn-primary header-cta" href="https://eventfrog.ch/de/p/kurse-seminare/berufliche-bildung/agile-unconference-2026-7393004809425552751.html" target="_blank" rel="noopener noreferrer" data-i18n-de="#AUZH26 - jetzt anmelden" data-i18n-en="#AUZH26 - register now" data-i18n-de-mobile="#AUZH26" data-i18n-en-mobile="#AUZH26">#AUZH26 - jetzt anmelden</a>
       </div>
     </div>
   </header>
@@ -126,6 +131,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
