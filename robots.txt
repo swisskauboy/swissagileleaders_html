@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swissagileleaders.org/sitemap.xml
+Sitemap: https://swissagileleaders.ch/sitemap.xml

@@ -141,15 +141,25 @@
         return;
       }
 
+      var cachedStep = 0;
+
       function galleryStep() {
+        if (cachedStep) {
+          return cachedStep;
+        }
         const card = track.querySelector(".gallery-item");
         if (!card) {
           return 280;
         }
         const styles = window.getComputedStyle(track);
         const gap = parseFloat(styles.columnGap || styles.gap || "0");
-        return card.getBoundingClientRect().width + gap;
+        cachedStep = card.getBoundingClientRect().width + gap;
+        return cachedStep;
       }
+
+      window.addEventListener("resize", function () {
+        cachedStep = 0;
+      });
 
       const prev = shell.querySelector("[data-gallery-prev]");
       const next = shell.querySelector("[data-gallery-next]");
