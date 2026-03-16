@@ -16,6 +16,36 @@ if (-not (Test-Path -Path $Source -PathType Container)) {
   throw "Source directory not found: $Source"
 }
 
+$encodingCheckPatterns = @("Ã", "Â", "â€", "�")
+$encodingCheckFiles = Get-ChildItem -Path $Source -Recurse -Include *.html, *.css, *.js
+$encodingIssues = @()
+
+foreach ($file in $encodingCheckFiles) {
+  try {
+    $content = Get-Content -Raw -Path $file.FullName
+  } catch {
+    continue
+  }
+  foreach ($pattern in $encodingCheckPatterns) {
+    if ($content -like "*$pattern*") {
+      $encodingIssues += $file.FullName
+      break
+    }
+  }
+}
+
+if ($encodingIssues.Count -gt 0) {
+  $list = $encodingIssues | Sort-Object -Unique | ForEach-Object { " - $_" }
+  $message = @(
+    "Encoding check failed. Possible mojibake sequences were found.",
+    "Please resave the affected files as UTF-8 and re-run deploy.",
+    "",
+    "Affected files:",
+    ($list -join [Environment]::NewLine)
+  ) -join [Environment]::NewLine
+  throw $message
+}
+
 New-Item -Path $Destination -ItemType Directory -Force | Out-Null
 
 $publishItems = @(

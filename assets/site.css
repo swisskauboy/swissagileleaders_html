@@ -914,6 +914,34 @@ a {
   margin-top: 0.35rem;
 }
 
+.keynote-book-section {
+  margin-top: 1rem;
+  display: flow-root;
+}
+
+.keynote-book-section h3 {
+  margin: 0 0 0.45rem;
+  font-family: "Fraunces", serif;
+}
+
+.keynote-book-section ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.keynote-book-section li + li {
+  margin-top: 0.35rem;
+}
+
+.keynote-language {
+  margin: 0.5rem 0 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
 .keynote-book {
   float: right;
   width: 24%;
@@ -942,13 +970,18 @@ a {
 }
 
 .keynote-highlights .keynote-photo {
-  margin: 0;
+  margin: 0 0 0.9rem;
 }
 
 .keynote-photo img {
   width: 100%;
   aspect-ratio: 1 / 1.27;
   object-fit: cover;
+}
+
+.keynote-photo.is-large img {
+  transform: scale(1.3);
+  transform-origin: center top;
 }
 
 .mural-grid {

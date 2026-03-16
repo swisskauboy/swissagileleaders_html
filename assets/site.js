@@ -59,7 +59,8 @@
         btn.classList.toggle("is-active", btn.getAttribute("data-lang-btn") === lang);
       });
       translationNotes.forEach(function (note) {
-        const visible = lang === "en";
+        const noteLang = note.getAttribute("data-ai-translation-note");
+        const visible = noteLang ? noteLang === lang : lang === "en";
         note.classList.toggle("is-visible", visible);
         note.setAttribute("aria-hidden", String(!visible));
       });
