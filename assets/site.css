@@ -981,15 +981,11 @@ a {
   margin: 0 0 0.9rem;
 }
 
+/* The keynote visual is a promo graphic whose lettering runs to the edges,
+   so it must never be cropped or zoomed — show it at its natural ratio. */
 .keynote-photo img {
   width: 100%;
-  aspect-ratio: 1 / 1.27;
-  object-fit: cover;
-}
-
-.keynote-photo.is-large img {
-  transform: scale(1.3);
-  transform-origin: center top;
+  height: auto;
 }
 
 .mural-grid {
