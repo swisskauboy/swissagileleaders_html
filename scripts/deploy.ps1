@@ -50,6 +50,8 @@ New-Item -Path $Destination -ItemType Directory -Force | Out-Null
 
 $publishItems = @(
   "index.html",
+  "robots.txt",
+  "sitemap.xml",
   "agileunconference",
   "assets",
   "erster-schritt",
