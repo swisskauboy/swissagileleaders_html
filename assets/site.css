@@ -415,7 +415,6 @@ a {
 /* ── Shared surface panel: background, border, and radius used by all standard cards ── */
 .about-card,
 .card,
-.team-card,
 .fact-card,
 .timeline-item,
 .keynote-copy,
@@ -564,37 +563,40 @@ a {
   font-weight: 600;
 }
 
-.team-grid {
+.team-photo {
   margin-top: 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-photo-names {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.team-card {
+  gap: 0.5rem;
+  padding: 0.85rem 0.6rem 1rem;
   text-align: center;
-  overflow: hidden;
-  padding-bottom: 0.85rem;
 }
 
-.team-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+.team-photo-names h3 {
+  margin: 0 0 0.3rem;
 }
 
-.team-card h3 {
-  margin: 0.8rem 0 0.35rem;
-}
-
-.team-card a {
+.team-photo-names a {
   font-weight: 700;
   color: var(--accent-strong);
   text-decoration: none;
 }
 
-.team-card a:hover,
-.team-card a:focus-visible {
+.team-photo-names a:hover,
+.team-photo-names a:focus-visible {
   text-decoration: underline;
 }
 
@@ -1672,8 +1674,7 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .cards,
-  .team-grid {
+  .cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1719,9 +1720,12 @@ a {
 
   .facts-grid,
   .cards,
-  .team-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-photo-names h3 {
+    font-size: 0.95rem;
   }
 
   .gallery-track {
