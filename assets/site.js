@@ -216,7 +216,7 @@
       }
       currentIndex = (index + currentItems.length) % currentItems.length;
       const item = currentItems[currentIndex];
-      imageNode.src = item.src;
+      imageNode.src = fullSrc(item.img);
       imageNode.alt = item.alt;
       captionNode.textContent = item.caption;
     }
@@ -261,24 +261,52 @@
       }
     });
 
+    // Large version for the overlay: data-full-avif / data-full-webp when present,
+    // picked to match the format the browser chose for the thumbnail; otherwise the
+    // thumbnail itself. Resolved at click time so lazy-loaded images work too.
+    function fullSrc(img) {
+      const current = img.currentSrc || img.src;
+      if (img.dataset.fullAvif && /\.avif(\?|$)/.test(current)) {
+        return img.dataset.fullAvif;
+      }
+      if (img.dataset.fullWebp && !/\.(jpe?g|png)(\?|$)/.test(current)) {
+        return img.dataset.fullWebp;
+      }
+      return current;
+    }
+
     tracks.forEach(function (track) {
-      const images = Array.from(track.querySelectorAll(".gallery-item img"));
+      const images = Array.from(track.querySelectorAll("figure img"));
       const items = images.map(function (img) {
-        const figure = img.closest(".gallery-item");
+        const figure = img.closest("figure");
         const captionNodeLocal = figure ? figure.querySelector("figcaption") : null;
         return {
-          src: img.currentSrc || img.src,
+          img: img,
           alt: img.alt || "",
           caption: captionNodeLocal ? captionNodeLocal.textContent.trim() : img.alt || ""
         };
       });
 
       images.forEach(function (img, index) {
-        const figure = img.closest(".gallery-item");
+        const figure = img.closest("figure");
         const target = figure || img;
         target.addEventListener("click", function () {
           open(items, index);
         });
+      });
+    });
+  }
+
+  function initGalleryMore() {
+    const buttons = Array.from(doc.querySelectorAll("[data-gallery-more]"));
+    buttons.forEach(function (button) {
+      const grid = doc.getElementById(button.getAttribute("data-gallery-more"));
+      if (!grid) {
+        return;
+      }
+      button.addEventListener("click", function () {
+        grid.classList.add("is-expanded");
+        button.hidden = true;
       });
     });
   }
@@ -328,6 +356,7 @@
   initQuoteSlider();
   initGalleryScrollControls();
   initLightbox();
+  initGalleryMore();
   initYear();
   applyStaggerDelays();
   initRevealObserver();

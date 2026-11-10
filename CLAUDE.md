@@ -33,7 +33,7 @@ JSON-LD lives in a `<script type="application/ld+json">` just before `</head>`: 
 ### Central CSS and JS
 
 - [assets/site.css](assets/site.css) — the entire stylesheet. Design tokens are CSS custom properties on `:root` (`--bg`, `--accent`, `--radius`, `--container`, …); prefer them over literal colors. Three breakpoints: `1160px` (nav spacing), `1280px` (**hamburger menu turns on and grids collapse — not the usual 768px**), `640px` (single column; the header CTA is hidden entirely).
-- [assets/site.js](assets/site.js) — one IIFE running eight `init*` functions on every page. Each returns early when its `data-*` hook is absent, so the same file is safe everywhere. No modules, no framework.
+- [assets/site.js](assets/site.js) — one IIFE running nine `init*` functions on every page. Each returns early when its `data-*` hook is absent, so the same file is safe everywhere. No modules, no framework.
 
 ### HTML↔JS contract (data attributes)
 
@@ -48,7 +48,8 @@ JS finds everything through these hooks; markup without them is inert:
 | `data-ai-translation-note="de\|en"` | footer note shown only in that language |
 | `data-slider` + `.quote-slide` | quote rotator (auto-advances every 6.5 s) |
 | `data-gallery-track`, `data-gallery-prev/next` | horizontal gallery scrolling |
-| `data-lightbox-gallery` | click-to-zoom overlay, built in JS at runtime |
+| `data-lightbox-gallery` | click-to-zoom overlay over every `figure img` inside, built in JS at runtime; uses `data-full-avif`/`data-full-webp` on the `<img>` for the large version when present |
+| `data-gallery-more="<grid id>"` | button that adds `.is-expanded` to that grid, revealing its `.is-extra` items |
 | `data-stagger` + `.reveal` | IntersectionObserver fade-in with staggered delay |
 | `id="year"` | footer copyright year |
 
@@ -64,7 +65,9 @@ Consequences when editing copy:
 
 ### Images
 
-Stored under `assets/img/<brand|events|team|contact|icons|flags|partners|mural>/`. Photos use `<picture>` with AVIF → WebP → raster fallback, all three variants committed next to each other; give the fallback `<img>` explicit `width`/`height` where the layout depends on it. The lightbox reads `img.currentSrc`, so it shows whichever format the browser picked.
+Stored under `assets/img/<brand|events|team|contact|icons|flags>/`. Photos use `<picture>` with AVIF → WebP → raster fallback, all three variants committed next to each other; give the fallback `<img>` explicit `width`/`height` where the layout depends on it. The lightbox reads `img.currentSrc` at click time, so it shows whichever format the browser picked — or, when the `<img>` carries `data-full-avif`/`data-full-webp`, the large file in that same format.
+
+The #AUZH26 event photos live in `assets/img/events/auzh26/` as `NNN-sm.{avif,webp,jpg}` (640 px wide, used in `srcset` and as the JPEG fallback) and `NNN-lg.{avif,webp}` (1600 px long edge, used in `srcset` and the lightbox), plus `hero-*` and a 1200×630 `og.jpg`. `NNN` is the photographer's frame number.
 
 ### Deployment
 
